@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Namma Yatri</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<style>
+		body {
+	background-color: #333333;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: #fdfcfc;
+}
+
+.logo img {
+	width: 50px;
+	height: 50px}
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+nav li {
+	margin-left: 30px;
+}
+
+nav a {
+	color: #333333;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #ffffff;
+	background-color: #333333;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.booking-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+	background-color: #222222;
+	color: #ffffff;
+}
+
+.auto-driver-image img {
+	width: 500px;
+	height: auto;
+	margin-right: 150px;
+}
+
+.booking-form {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+h2 {
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
+form label {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+form input,
+form select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+}
+
+button[type="submit"] {
+	background-color: white;
+}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="https://is5-ssl.mzstatic.com/image/thumb/Purple116/v4/63/0c/a0/630ca00d-8d51-b96c-c2ca-7b4e8939ff57/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/434x0w.webp" alt="Namma Yatri Logo">
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="booking-section">
+		<div class="auto-driver-image">
+			<img src="https://nammayatri.in/img/autoDriverMob.png" alt="Auto Driver Image">
+		</div>
+		<div class="booking-form">
+			<h2>Experience the joy of hassle-free travel with Namma Yatri!</h2>
+			<form>
+				<label for="pickup-location">Pickup Location</label>
+				<input type="text" id="pickup-location" name="pickup-location" required>
+				<label for="dropoff-location">Dropoff Location</label>
+				<input type="text" id="dropoff-location" name="dropoff-location" required>
+				<label for="vehicle-type">Vehicle Type</label>
+				<select id="vehicle-type" name="vehicle-type">
+					<option value="auto">Auto</option>
+					<option value="sedan">Sedan</option>
+					<option value="suv">SUV</option>
+				</select>
+				<label for="ride-date">Ride Date</label>
+				<input type="date" id="ride-date" name="ride-date" required>
+				<label for="ride-time">Ride Time</label>
+				<input type="time" id="ride-time" name="ride-time" required>
+				<button type="submit">Book Now</button>
+			</form>
+		</div>
+	</section>
+</body>
+</html>
